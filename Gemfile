@@ -60,3 +60,6 @@ end
 
 #devise
 gem 'devise'
+
+#https://github.com/javan/whenever aka schedule.rb
+gem 'whenever', :require => false
