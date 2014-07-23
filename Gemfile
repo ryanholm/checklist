@@ -63,3 +63,9 @@ gem 'devise'
 
 #https://github.com/javan/whenever aka schedule.rb
 gem 'whenever', :require => false
+
+#RSpec and Capybara
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+end
