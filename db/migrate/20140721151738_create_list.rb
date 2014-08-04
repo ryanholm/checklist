@@ -2,10 +2,12 @@ class CreateList < ActiveRecord::Migration
   def change
     create_table :lists do |t|
       t.string  :name
-      t.boolean :public,       default: true
+      t.boolean :public, default: true
       t.text    :description
+      t.belongs_to :user
 
       t.timestamps
     end
   end
 end
+
